@@ -1,0 +1,71 @@
+# ============================================
+# CONFIGURACIÓN DEL BOT DE INVERSIÓN
+# ============================================
+
+# --- MODO DE OPERACIÓN ---
+# Opciones: backtest, paper, live
+MODE=paper
+
+# --- BRÓKER ---
+BROKER_TYPE=binache
+BINANCE_API_KEY=tu_api_key_aqui
+BINANCE_SECRET_KEY=tu_secret_key_aqui
+BINANCE_TESTNET=true
+
+# Interactive Brokers (opcional)
+IB_HOST=127.0.0.1
+IB_PORT=7497
+IB_CLIENT_ID=1
+
+# MetaTrader 5 (opcional)
+MT5_LOGIN=12345678
+MT5_PASSWORD=tu_password
+MT5_SERVER=MetaQuotes-Demo
+
+# --- NOTIFICACIONES ---
+TELEGRAM_BOT_TOKEN=tu_telegram_bot_token
+TELEGRAM_CHAT_ID=tu_chat_id
+
+WHATSAPP_ENABLED=false
+TWILIO_ACCOUNT_SID=tu_twilio_sid
+TWILIO_AUTH_TOKEN=tu_twilio_token
+TWILIO_WHATSAPP_NUMBER=+14155238886
+
+# --- APIs DE NOTICIAS ---
+NEWS_API_KEY=tu_newsapi_key
+FINNHUB_API_KEY=tu_finnhub_key
+ALPHA_VANTAGE_KEY=tu_alpha_vantage_key
+
+# --- BASE DE DATOS ---
+DB_TYPE=sqlite
+# Para PostgreSQL:
+# DB_TYPE=postgresql
+# DB_HOST=localhost
+# DB_PORT=5432
+# DB_NAME=trading_bot
+# DB_USER=postgres
+# DB_PASSWORD=tu_password
+
+# --- CONFIGURACIÓN DE RIESGO ---
+MAX_RISK_PER_TRADE=2.0
+MAX_DAILY_LOSS=3.0
+MAX_CORRELATION=0.7
+STOP_LOSS_ATR_MULTIPLIER=2.0
+TAKE_PROFIT_RATIO=1.5
+CIRCUIT_BREAKER_NEWS=true
+
+# --- CONFIGURACIÓN DE TRADING ---
+DEFAULT_TIMEFRAME=1h
+MAX_POSITIONS=5
+SYMBOLS=BTC/USDT,ETH/USDT,SOL/USDT
+
+# --- MODELOS ML ---
+ML_MODEL_TYPE=xgboost
+RETRAIN_INTERVAL_HOURS=24
+SENTIMENT_ENABLED=true
+SENTIMENT_CONFIDENCE_MIN=0.6
+
+# --- DASHBOARD ---
+DASHBOARD_ENABLED=false
+DASHBOARD_HOST=0.0.0.0
+DASHBOARD_PORT=8000
